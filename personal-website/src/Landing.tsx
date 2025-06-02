@@ -1,9 +1,12 @@
+import { AppBar } from '@mui/material';
 import React from 'react';
+import Navbar from './Navbar';
 
 function Landing(){
     return (
         <>
-            <h1>Hi</h1>
+          <Navbar/>
+          <h1>Justin's Personal Website</h1>
         </>
     )
 }

@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 function Project() {
     return (
         <>
-          <Navbar/>
+          <Navbar page = 'Projects'/>
           <h1>PROJECT</h1>
         </>
     )

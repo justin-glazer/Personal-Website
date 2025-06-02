@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 function Landing(){
     return (
         <>
-          <Navbar/>
+          <Navbar page='Home'/>
           <h1>Justin's Personal Website</h1>
         </>
     )

@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './Landing';
-import About from './About';
 import Projects from './Projects';
-import Contact from './Contact';
 import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
@@ -28,9 +26,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}/>
-          <Route path="/About" element={<About/>}/>
           <Route path="/Projects" element={<Projects/>}/>
-          <Route path="/Contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

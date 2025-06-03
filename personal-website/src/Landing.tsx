@@ -7,6 +7,7 @@ function Landing(){
         <>
           <Navbar page='Home'/>
           <h1>Justin's Personal Website</h1>
+          
         </>
     )
 }

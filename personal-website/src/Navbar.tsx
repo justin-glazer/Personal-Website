@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Button, Box, Typography } from '@mui/material';
 import pic from './attachments/SPort_Square.png'
@@ -8,6 +8,11 @@ type type = {
 }
 
 function Navbar({page}: type) {
+    
+    const home = page=='Home';
+    const project = page=='Projects';
+    const work = page=='Work'
+    
     return(
         <AppBar position="static" sx={{flexDirection: 'row', boxShadow: 'none', height: '125px', padding: '0' }}>
             <div>

@@ -16,9 +16,9 @@ function ProjectCard({name}: type) {
     return (
         <>
             <div style ={{borderRadius: '1.25rem', backgroundColor: 'blue'}}>
-                <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                <Box className='cardTop'>
                     <Typography>{name}</Typography>
-                    <img src={map.get(name).img} alt={name} style={{justifyContent: 'center', width: '15rem', height: '15rem'}}></img>
+                    <img src={map.get(name).img} alt={name} style={{justifyContent: 'center', alignContent: 'center', width: '15rem', height: '15rem'}}></img>
                     <h2>{map.get(name).startDate} - {map.get(name).endDate}</h2>
                 </Box>
                 <div>

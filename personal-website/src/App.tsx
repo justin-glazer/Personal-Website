@@ -16,9 +16,17 @@ function App() {
       }
       
     },
+    
     typography: {
       fontFamily: '"Poppins", sans-serif',
-    }
+      fontSize: 20,
+      
+      button: {
+        textTransform: 'none',
+      },
+
+    },
+
   })
   
   return (

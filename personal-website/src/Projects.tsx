@@ -9,6 +9,7 @@ function Project() {
           <h1>PROJECT</h1>
           <div>
             <ProjectCard name='Job Capyture'/>
+            <ProjectCard name='T.O.M'/>
           </div>
         </>
     )

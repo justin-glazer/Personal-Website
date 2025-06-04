@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './Landing';
 import Projects from './Projects';
+import Work from './Work'
 import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />}/>
           <Route path="/Projects" element={<Projects/>}/>
+          <Route path="/Work" element={<Work/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

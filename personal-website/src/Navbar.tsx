@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Button, Box, Typography } from '@mui/material';
 import pic from './attachments/SPort_Square.png'
@@ -22,20 +22,20 @@ function Navbar({page}: type) {
             </div>
             <div style={{marginLeft: '4rem', alignContent: 'center'}}>
                 <Button component={Link} to="/" 
-                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', color: 'black', fontSize: '30px', fontWeight: 'bold', 
+                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', color: home? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                     '&:hover': {
                       backgroundColor: 'white',
                       color: 'black',
                     }, }}>Home</Button>
                 <Button component={Link} to="/Projects" 
-                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: 'black', fontSize: '30px', fontWeight: 'bold', 
+                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: project? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                     '&:hover': {
                       backgroundColor: 'white',
                       color: 'black',
                     },
                     }}>Projects</Button>
                 <Button component={Link} to="/Work" 
-                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: 'black', fontSize: '30px', fontWeight: 'bold', 
+                    sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: work? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                     '&:hover': {
                       backgroundColor: 'white',
                       color: 'black',

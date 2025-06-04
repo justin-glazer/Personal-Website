@@ -15,14 +15,16 @@ type type = {
 function ProjectCard({name}: type) {
     return (
         <>
-            <div style ={{borderRadius: '1.25rem', backgroundColor: 'blue'}}>
-                <Box className='cardTop'>
-                    <Typography>{name}</Typography>
-                    <img src={map.get(name).img} alt={name} style={{justifyContent: 'center', alignContent: 'center', width: '15rem', height: '15rem'}}></img>
-                    <h2>{map.get(name).startDate} - {map.get(name).endDate}</h2>
-                </Box>
-                <div>
-                    <h1>{map.get(name).description}</h1>
+            <div style ={{margin: '1rem 1rem 1rem 1rem', flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
+                <Typography align="center">{name}</Typography>
+                <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <div style={{display: 'flex', flexDirection: 'column', alignContent: 'center'}}>
+                        <img src={map.get(name).img} alt={name} style={{justifyContent: 'center', alignContent: 'center', width: '15rem', height: '15rem'}}></img>
+                        <Typography>{map.get(name).startDate} - {map.get(name).endDate}</Typography>
+                    </div>
+                    <div>
+                        <Typography>{map.get(name).description}</Typography>
+                    </div>
                 </div>
             </div>
         </>

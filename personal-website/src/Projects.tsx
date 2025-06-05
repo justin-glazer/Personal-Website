@@ -7,9 +7,9 @@ function Project() {
         <>
           <Navbar page = 'Projects'/>
           <h1>PROJECT</h1>
-          <div>
-            <ProjectCard name='Job Capyture'/>
-            <ProjectCard name='T.O.M'/>
+          <div style={{display: 'grid'}}>
+              <ProjectCard name='Job Capyture'/>
+              <ProjectCard name='T.O.M'/>
           </div>
         </>
     )

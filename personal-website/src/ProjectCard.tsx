@@ -17,14 +17,14 @@ type type = {
 function ProjectCard({name}: type) {
     return (
         <>
-            <div style ={{margin: '1rem 1rem 1rem 1rem', flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
+            <div style ={{margin: '1rem 4rem 1rem 4rem', flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
                 <Typography align="center">{name}</Typography>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
-                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '40%'}}>
+                    <div style={{flexDirection: 'column', justifyItems: 'center', width: '40%'}}>
                         <img src={map.get(name).img} alt={name} style={{width: '15rem', height: '15rem'}}></img>
                         <Typography>{map.get(name).startDate} - {map.get(name).endDate}</Typography>
                         <GitHubIcon 
-                        sx={{justifyContent: 'center', '&:hover': {
+                        sx={{alignContent: 'center', '&:hover': {
                             cursor: 'pointer'
                         },}}
                         onClick={()=> window.open(map.get(name).gh, "_blank")}>GitHub!</GitHubIcon>

@@ -17,7 +17,7 @@ type type = {
 function ProjectCard({name}: type) {
     return (
         <>
-            <div style ={{margin: '1rem 4rem 1rem 4rem', flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
+            <div style ={{flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
                 <Typography align="center">{name}</Typography>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
                     <div style={{flexDirection: 'column', justifyItems: 'center', width: '40%'}}>

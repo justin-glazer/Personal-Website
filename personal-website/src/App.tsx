@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './Landing';
 import Projects from './Projects';
 import Work from './Work'
-import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 
@@ -20,13 +19,23 @@ function App() {
     
     typography: {
       fontFamily: '"Poppins", sans-serif',
-      fontSize: 20,
       
       button: {
         textTransform: 'none',
       },
 
     },
+
+    breakpoints: {
+    values: {
+      xs: 0,
+      sm: 750,
+      md: 1050,
+      lg: 1350,
+      xl: 1536,
+    },
+  },
+
 
   })
   

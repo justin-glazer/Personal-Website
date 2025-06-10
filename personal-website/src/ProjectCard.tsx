@@ -3,6 +3,7 @@ import jobPic from './attachments/job.png'
 import tomPic from './attachments/tom.png'
 import { Typography, Box } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import './Projects.css'
 
 
 
@@ -17,12 +18,19 @@ type type = {
 function ProjectCard({name}: type) {
     return (
         <>
-            <div style ={{flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray'}}>
-                <Typography align="center">{name}</Typography>
+            <div style ={{flexDirection: 'column', borderRadius: '1.25rem', backgroundColor: 'gray', padding: '0.5rem 0.5rem 0.5rem 0.5rem'}}>
+                <Typography align="center" sx={{fontSize: {
+                    xs: '1.5rem',
+                    sm: '1.75rem',
+                    md: '2rem',
+                    lg: '2.3rem', }}}>{name}</Typography>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
                     <div style={{flexDirection: 'column', justifyItems: 'center', width: '40%'}}>
-                        <img src={map.get(name).img} alt={name} style={{width: '15rem', height: '15rem'}}></img>
-                        <Typography>{map.get(name).startDate} - {map.get(name).endDate}</Typography>
+                        <img className='projImg' src={map.get(name).img} alt={name}></img>
+                        <Typography sx={{fontSize: {
+                            xs: '0.9rem',
+                            sm: '0.975rem',
+                            lg: '1.15rem', }}}>{map.get(name).startDate} - {map.get(name).endDate}</Typography>
                         <GitHubIcon 
                         sx={{alignContent: 'center', '&:hover': {
                             cursor: 'pointer'

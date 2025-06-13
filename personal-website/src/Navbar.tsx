@@ -36,11 +36,11 @@ function Navbar({page}: type) {
         <AppBar position="static" sx={{display: 'flex', flexDirection: 'row', justifyContent: responsiveNav? 'space-between' : 'flex-start', boxShadow: 'none', height: '125px', padding: '0' }}>
             <div>
                 <a href='/'>
-                    <img src={pic} alt='Justin' style={{marginLeft: '4rem', marginTop: '1rem', borderRadius: '50rem', justifyContent: 'center', alignContent: 'center', height:'5.5rem', width: '5.5rem'}}></img>
+                    <img src={pic} alt='Justin' style={{marginLeft: responsiveNav? '2rem' : '4rem', marginTop: '1rem', borderRadius: '50rem', justifyContent: 'center', alignContent: 'center', height:'5.5rem', width: '5.5rem'}}></img>
                 </a>
             </div>
             {responsiveNav ? (
-                <div style={{display: 'flex', justifyItems: 'space-between'}}>
+                <div style={{display: 'flex', marginRight: '2rem'}}>
                     <IconButton onClick={openResponsiveNav}>
                         <MenuIcon/>
                     </IconButton> 

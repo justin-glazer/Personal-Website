@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import ProjectCard from "./ProjectCard";
-import './Projects.css';
+import './ProjectsAndWork.css';
 
 
 function Project() {
@@ -9,7 +9,7 @@ function Project() {
         <>
           <Navbar page = 'Projects'/>
           <h1>PROJECT</h1>
-          <div className='projectDiv'>
+          <div className='projWorkDiv'>
                 <ProjectCard name='Job Capyture'/>
                 <ProjectCard name='T.O.M'/>
                 <div style={{alignSelf: 'center'}}>

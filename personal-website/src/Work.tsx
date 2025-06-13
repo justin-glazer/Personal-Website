@@ -1,14 +1,22 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import Navbar from "./Navbar";
+import WorkCard from "./WorkCard";
+import './ProjectsAndWork.css';
 
-function Work () {
+function Project() {
     return (
         <>
-            <Navbar page='Work'/>
-            <Typography>WORK HERE</Typography>
+          <Navbar page = 'Work'/>
+          <h1>PROJECT</h1>
+          <div className='projWorkDiv'>
+                <WorkCard name='Job Capyture'/>
+                <WorkCard name='T.O.M'/>
+                <div style={{alignSelf: 'center'}}>
+                    <WorkCard name='T.O.M'/>
+                </div>
+          </div>
         </>
     )
 }
 
-export default Work
+export default Project

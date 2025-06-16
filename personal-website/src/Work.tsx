@@ -9,11 +9,13 @@ function Project() {
           <Navbar page = 'Work'/>
           <h1>PROJECT</h1>
           <div className='projWorkDiv'>
-                <WorkCard name='Job Capyture'/>
-                <WorkCard name='T.O.M'/>
-                <div style={{alignSelf: 'center'}}>
-                    <WorkCard name='T.O.M'/>
-                </div>
+                <WorkCard name='Ryght AI'/>
+                <WorkCard name='Pop Empanada'/>
+                <WorkCard name="Goldberg's Original Bagels"/>
+                <WorkCard name='Campgaw Mountain'/>
+                <WorkCard name='Northern Counties Soccer Association'/>
+                <WorkCard name='Life Time Inc.'/>
+                <WorkCard name='Cyclesport'/>
           </div>
         </>
     )

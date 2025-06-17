@@ -2,12 +2,13 @@ import React from "react";
 import Navbar from "./Navbar";
 import WorkCard from "./WorkCard";
 import './ProjectsAndWork.css';
+import { Typography } from "@mui/material";
 
 function Project() {
     return (
         <>
           <Navbar page = 'Work'/>
-          <h1>PROJECT</h1>
+          <Typography sx={{textAlign: 'center'}}>Work Experience</Typography>
           <div className='projWorkDiv'>
                 <WorkCard name='Ryght AI'/>
                 <WorkCard name='Pop Empanada'/>

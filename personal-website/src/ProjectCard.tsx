@@ -3,13 +3,15 @@ import jobPic from './attachments/job.png'
 import tomPic from './attachments/tom.png'
 import { Typography, Box } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LaunchIcon from '@mui/icons-material/Launch';
 import './ProjectsAndWork.css'
+import { Launch } from "@mui/icons-material";
 
 
 
 const map = new Map();
-map.set('Job Capyture', {description: 'Jobs and such HI i AM TYPING today', img: jobPic, startDate: 'December 2024', endDate: 'January 2025', gh: 'https://github.com/heavens-potato/winter-project'})
-map.set('T.O.M', {description: 'Tom Cat', img: tomPic, startDate: 'May 2024', endDate: 'August 2024', gh: 'https://github.com/om-arya/T.O.M'})
+map.set('Job Capyture', {description: 'Jobs and such HI i AM TYPING today', img: jobPic, startDate: 'December 2024', endDate: 'January 2025', gh: 'https://github.com/heavens-potato/winter-project', url: 'https://job-capyture.vercel.app/'})
+map.set('T.O.M', {description: 'Tom Cat', img: tomPic, startDate: 'May 2024', endDate: 'August 2024', gh: 'https://github.com/om-arya/T.O.M', url: 'https://tom-tfqal7zj2a-uk.a.run.app/'})
 
 type type = {
     name: string
@@ -31,11 +33,18 @@ function ProjectCard({name}: type) {
                             xs: '0.9rem',
                             sm: '0.975rem',
                             lg: '1.15rem', }}}>{map.get(name).startDate} - {map.get(name).endDate}</Typography>
-                        <GitHubIcon 
-                        sx={{alignContent: 'center', '&:hover': {
-                            cursor: 'pointer'
-                        },}}
-                        onClick={()=> window.open(map.get(name).gh, "_blank")}>GitHub!</GitHubIcon>
+                        <div style={{display: 'flex', flexDirection: 'row', gap: '0.5rem'}}>
+                            <GitHubIcon 
+                            sx={{alignContent: 'center', '&:hover': {
+                                cursor: 'pointer'
+                            },}}
+                            onClick={()=> window.open(map.get(name).gh, "_blank")}>GitHub!</GitHubIcon>
+                            <LaunchIcon 
+                            sx={{alignContent: 'center', '&:hover': {
+                                cursor: 'pointer'
+                            },}}
+                            onClick={()=> window.open(map.get(name).url, "_blank")}>GitHub!</LaunchIcon>
+                        </div>
                     </div>
                     <div style={{width: '60%', display: 'flex', justifyContent: 'center'}}>
                         <Typography>{map.get(name).description}</Typography>

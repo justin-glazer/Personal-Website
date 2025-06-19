@@ -42,7 +42,12 @@ function Navbar({page}: type) {
             </div>
             {responsiveNav ? (
                 <div style={{display: 'flex', marginRight: '2rem'}}>
-                    <IconButton onClick={openResponsiveNav}>
+                    <IconButton onClick={openResponsiveNav} sx={{transition: 'transform 0.2s',
+                        '&:hover': {
+                        transform: 'scale(1.085)',
+                        transition: 'transform 0.2s'
+                        }
+                    }}>
                         <MenuIcon/>
                     </IconButton> 
                     

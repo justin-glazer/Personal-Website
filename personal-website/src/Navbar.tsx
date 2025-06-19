@@ -7,6 +7,7 @@ import pic from './attachments/SPort_Square.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import ResponsiveNav from './ResponsiveNav';
+import './Navbar.css'
 
 type type = {
     page: string
@@ -36,7 +37,7 @@ function Navbar({page}: type) {
         <AppBar position="static" sx={{display: 'flex', flexDirection: 'row', justifyContent: responsiveNav? 'space-between' : 'flex-start', boxShadow: 'none', height: '125px', padding: '0' }}>
             <div>
                 <a href='/'>
-                    <img src={pic} alt='Justin' style={{marginLeft: responsiveNav? '2rem' : '4rem', marginTop: '1rem', borderRadius: '50rem', justifyContent: 'center', alignContent: 'center', height:'5.5rem', width: '5.5rem'}}></img>
+                    <img className='NavImg' src={pic} alt='Justin' style={{transition: 'transform 0.2s', marginLeft: responsiveNav? '2rem' : '4rem', marginTop: '1rem', borderRadius: '50rem', justifyContent: 'center', alignContent: 'center', height:'5.5rem', width: '5.5rem'}}></img>
                 </a>
             </div>
             {responsiveNav ? (
@@ -64,23 +65,23 @@ function Navbar({page}: type) {
                 </div>
                 ) : (<div style={{marginLeft: '4rem', alignContent: 'center'}}>
                     <Button component={Link} to="/" 
-                        sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', color: home? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
+                        sx={{padding: '0 0.5rem 0 0.5rem', transition: 'transform 0.2s', borderRadius: '1rem', color: home? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                         '&:hover': {
-                        backgroundColor: 'white',
-                        color: 'black',
+                        transform: 'scale(1.075)',
+                        transition: 'transform 0.2s'
                         }, }}>Home</Button>
                     <Button component={Link} to="/Projects" 
-                        sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: project? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
+                        sx={{padding: '0 0.5rem 0 0.5rem', transition: 'transform 0.2s', borderRadius: '1rem', marginLeft: '1.5rem', color: project? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                         '&:hover': {
-                        backgroundColor: 'white',
-                        color: 'black',
+                        transform: 'scale(1.075)',
+                        transition: 'transform 0.2s'
                         },
                         }}>Projects</Button>
                     <Button component={Link} to="/Work" 
-                        sx={{padding: '0 0.5rem 0 0.5rem', borderRadius: '1rem', marginLeft: '1.5rem', color: work? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
+                        sx={{padding: '0 0.5rem 0 0.5rem', transition: 'transform 0.2s', borderRadius: '1rem', marginLeft: '1.5rem', color: work? 'yellow' : 'black', fontSize: '30px', fontWeight: 'bold', 
                         '&:hover': {
-                        backgroundColor: 'white',
-                        color: 'black',
+                        transform: 'scale(1.075)',
+                        transition: 'transform 0.2s'
                         },
                         }}>Work</Button>
                 </div>)}  

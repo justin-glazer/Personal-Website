@@ -6,7 +6,14 @@ function Landing(){
     return (
         <>
           <Navbar page='Home'/>
-          <h1>Justin's Personal Website</h1>
+          <div style={{display: 'flex', flexDirection: 'column'}}> {/* App Content*/}
+            <div> {/* Left Half*/}
+
+            </div> {/* Left Half END*/}
+            <div> {/* Right Half*/}
+
+            </div> {/* Right Half END*/}
+          </div> {/* App Content END*/}
           
         </>
     )

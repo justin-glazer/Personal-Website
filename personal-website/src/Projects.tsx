@@ -10,7 +10,7 @@ function Project() {
     return (
         <>
           <Navbar page = 'Projects'/>
-          <Typography sx={{textAlign: 'center'}}>Project Experience</Typography>
+          <Typography sx={{textAlign: 'center', fontSize: '4rem'}}>Project Experience</Typography>
           <div className='projWorkDiv'>
                 <ProjectCard name='Job Capyture'/>
                 <ProjectCard name='T.O.M'/>
